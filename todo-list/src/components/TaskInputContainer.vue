@@ -1,18 +1,17 @@
 <script setup>
 
-    import { ref, onMounted } from 'vue';
-    // import Button from './Button.vue';
-    // import Input from './Input.vue';
+    import { ref, defineEmits } from 'vue';
+
+    const emit = defineEmits(['add-new-task']);
 
     const newTask = ref('');
-   
+
     const addNewTask = () => {
         if(newTask.value.trim() !== "") {
-            console.log(newTask.value);
-
+            emit('add-new-task',newTask.value.trim());
+            newTask.value = "";
         }
     }
-
 </script>
 
 <template>
