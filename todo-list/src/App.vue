@@ -20,7 +20,7 @@
     tasks.value.push(newTask);
   }
 
-
+  
 
 </script>
 

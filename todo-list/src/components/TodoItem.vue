@@ -8,7 +8,7 @@
 
     // declaring events that emit
     const emit = defineEmits(['delete-task']);
-
+    
 
 </script>
 
